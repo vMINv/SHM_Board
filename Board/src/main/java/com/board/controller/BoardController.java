@@ -41,6 +41,8 @@ public class BoardController {
 	@GetMapping("/board")
 	public void boardById(@RequestParam("id") int id, Model model) {
 		Board boardById = boardService.boardById(id);
+		List<Board> sublist = boardService.sublist(id);
 		model.addAttribute("board", boardById);
+		model.addAttribute("sublist", sublist);
 	}
 }

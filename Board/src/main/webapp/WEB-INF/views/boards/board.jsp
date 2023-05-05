@@ -24,12 +24,12 @@
 			<th>제목</th>
 			<th>작성일</th>
 		</tr>
-		<%-- <c:forEach items="${list }" var="board">
+		<c:forEach items="${sublist }" var="board">
 			<tr>
 				<td><a href="/boards/board?id=${board.id }">${board.title }</a></td>
 				<td>${fn:split(board.regDate,' ')[0] }</td>
 			</tr>
-		</c:forEach> --%>
+		</c:forEach>
 	</table>
 	<!-- END 연관게시글 목록 -->
 	<!-- END 메인 -->

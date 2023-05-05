@@ -29,4 +29,9 @@ public class BoardServiceImpl implements BoardService {
 		return boardMapper.boardById(id);
 	}
 
+	@Override
+	public List<Board> sublist(int id) {
+		return boardMapper.sublist(id);
+	}
+
 }

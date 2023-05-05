@@ -12,4 +12,5 @@ public interface BoardService {
 	
 	Board boardById(int id);
 
+	List<Board> sublist(int id);
 }
